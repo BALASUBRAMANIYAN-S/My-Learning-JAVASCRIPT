@@ -1,24 +1,38 @@
-{/*  ForEach Array is a print a Each element of array:*/}
+{/*  ForEach Array is a print each element of array:*/}
 
-const fruits= ['apple','banana','mango']
+// Create an array of fruits
+const fruits = ['apple', 'banana', 'mango'];
 
-fruits.forEach(fruit=>console.log(fruit))
-
-{/*using a foreach method sum of all the arrays*/}
-
-const Numbers=[1,2,3,4,5]
-var total=0;
-Numbers.forEach(Num=>
-    {  total += Num 
-    }
-);
-console.log(total)
+// Use forEach to print each fruit in the array
+fruits.forEach(fruit => console.log(fruit));
 
 
-const DoubleNumbers=[]
+{/* Using a forEach method to find the sum of all elements in an array */}
 
-Numbers.forEach(Num=>
-    { DoubleNumbers.push(Num*2)
-    }
-);
-console.log(DoubleNumbers);
+// Create an array of numbers
+const Numbers = [1, 2, 3, 4, 5];
+
+// Variable to hold the sum
+var total = 0;
+
+// Use forEach to add each number to total
+Numbers.forEach(Num => {
+    total += Num;  // Add the current number to total
+});
+
+// Print the final sum
+console.log(total);   // Output: 15
+
+
+{/* Using a forEach method to create a new array with double the values */}
+
+// Empty array to store doubled numbers
+const DoubleNumbers = [];
+
+// Use forEach to go through each number and push its double into the new array
+Numbers.forEach(Num => {
+    DoubleNumbers.push(Num * 2);  // Multiply each number by 2
+});
+
+// Print the doubled numbers array
+console.log(DoubleNumbers);   // Output: [2, 4, 6, 8, 10]
