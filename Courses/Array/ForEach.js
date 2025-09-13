@@ -36,3 +36,15 @@ Numbers.forEach(Num => {
 
 // Print the doubled numbers array
 console.log(DoubleNumbers);   // Output: [2, 4, 6, 8, 10]
+
+
+{/* Using a forEach method to Find a biggest Number in the Array */}
+
+let FinMax=Numbers[0];
+
+Numbers.forEach((num)=>{
+    if (num>FinMax){
+        FinMax=num
+    }
+})
+console.log(FinMax);
