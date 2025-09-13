@@ -13,3 +13,12 @@ Numbers.forEach(Num=>
     }
 );
 console.log(total)
+
+
+const DoubleNumbers=[1,2,3,4,5]
+
+DoubleNumbers.forEach(Num=>
+    { DoubleNumbers.push(Num*2)
+    }
+);
+console.log(DoubleNumbers);
