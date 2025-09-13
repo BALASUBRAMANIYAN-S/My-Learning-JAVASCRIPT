@@ -40,11 +40,20 @@ console.log(DoubleNumbers);   // Output: [2, 4, 6, 8, 10]
 
 {/* Using a forEach method to Find a biggest Number in the Array */}
 
-let FinMax=Numbers[0];
+let FinMax=Numbers[0]; //assign a value 
 
 Numbers.forEach((num)=>{
-    if (num>FinMax){
+    if (num>FinMax){ // if use condition check 
         FinMax=num
     }
 })
 console.log(FinMax);
+
+
+const Names= ['bala','athi','mike','Rohit']
+
+Names.forEach((nae,index)=>{
+    Names[index]=nae.toUpperCase();
+})
+
+console.table(Names);
