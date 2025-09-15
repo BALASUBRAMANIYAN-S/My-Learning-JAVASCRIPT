@@ -12,15 +12,19 @@ const people = [
 ];
 
 const eligible = people.filter((value) => (value.AGE>=20));
-eligible.map((v)=>{
-console.log(v);})
+
+console.log("Filter use To Find a Eligible of above 20 AGE :",eligible);
 
 //filter a Above 4 letter 
 
 const data = ["Chennai" ,"Bangalore","Hyderabad","Mumbai","Pune" ]
 
 const finalData= data.filter((D)=>D.length>5)
-finalData.map((DATA)=>{
-    console.log(DATA);
-    
-})
+
+console.log("Filter a Length :",finalData);
+
+// multiple condition to check with filter function
+
+const multiData = data.filter((value)=>value.length>=6 && value.startsWith('B'))
+
+console.log("multiple condition: ",multiData);
