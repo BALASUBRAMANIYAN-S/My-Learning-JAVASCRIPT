@@ -9,3 +9,13 @@ const Square = numbers.map((value) => {
 
 // Display the resulting array in a table format in the console
 console.table(Square);
+
+/*Array use map function to convert a Capital letter */
+
+const words =['bala','Sam','apple']
+
+const CapitalWords = words.map((value,index)=>{
+   return value[index].toUpperCase();
+})
+
+console.log(CapitalWords);
