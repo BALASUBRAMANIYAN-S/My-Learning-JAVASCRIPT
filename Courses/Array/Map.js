@@ -15,7 +15,20 @@ console.table(Square);
 const words =['bala','Sam','apple']
 
 const CapitalWords = words.map((value,index)=>{
-   return value[index].toUpperCase();
+   return value.toUpperCase();
 })
 
 console.log(CapitalWords);
+
+// combination Array 
+
+const Names= ["Bala","Apple","Band"];
+const Color=["Black","Red","Yellow"];
+
+const Output = Names.map((value,index)=>{
+   return value+" = "+Color[index];
+  
+   
+})
+
+console.log(Output);
