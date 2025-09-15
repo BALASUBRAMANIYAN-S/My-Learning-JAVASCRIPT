@@ -20,3 +20,33 @@ let colorCounts = colors.reduce((accumulator, currentValue) => {
   return accumulator;
 }, {});
 console.log(colorCounts); // { red: 2, blue: 2, green: 1, yellow: 1 }
+
+
+let numberss = [5, 10, 15, 20, 25];
+let largest = numberss.reduce((accumulator, currentValue) => {
+  return Math.max(accumulator, currentValue);
+});
+console.log(largest); // 25
+
+let people = [
+{ name: 'Rakesh', age: 25, city: 'Chennai' },
+{ name: 'Raj', age: 30, city: 'Salem' },
+{ name: 'Sara', age: 35, city: 'Chennai' }
+];
+
+let groupedByCity = people.reduce((accumulator, currentValue) => {
+  if (currentValue.city in accumulator) {
+accumulator[currentValue.city].push(currentValue);
+  } else {
+accumulator[currentValue.city] = [currentValue];
+  }
+  return accumulator;
+}, {});
+
+console.log(groupedByCity); 
+/* 
+{ 
+Chennai: [{ name: 'Rakesh', age: 25, city: 'Chennai' }, { name: 'Sara', age: 35, city: 'Chennai' }], 
+Salem: [{ name: 'Raj', age: 30, city: 'Salem' }] 
+}
+*/      
