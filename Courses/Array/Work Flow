@@ -5,3 +5,20 @@ types of Array
 3.Map
 4.Filter
 5.Reduce
+6.Slice
+7.Splice
+8.Concat
+9.Sort
+10.Fill
+11.includes
+12.Join
+13.Reverse
+14.Pop
+15.Push
+16.Shift 
+17.UnShift
+18.IndexOf
+19.LastIndexOf
+20.Every and Some in JAVAScript
+21.primitive and Reference types 
+22.Multiple ways to Clone in Array 
