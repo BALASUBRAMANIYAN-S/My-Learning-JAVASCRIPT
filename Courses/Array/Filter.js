@@ -13,6 +13,14 @@ const people = [
 
 const eligible = people.filter((value) => (value.AGE>=20));
 eligible.map((v)=>{
-console.log(v);
+console.log(v);})
 
+//filter a Above 4 letter 
+
+const data = ["Chennai" ,"Bangalore","Hyderabad","Mumbai","Pune" ]
+
+const finalData= data.filter((D)=>D.length>5)
+finalData.map((DATA)=>{
+    console.log(DATA);
+    
 })
