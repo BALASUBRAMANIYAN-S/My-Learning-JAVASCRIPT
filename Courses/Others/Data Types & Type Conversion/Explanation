@@ -1,0 +1,5 @@
+Primitive: string, number, boolean, null, undefined, symbol, bigint
+
+Non-Primitive: object, array, function
+
+You can convert types manually.
