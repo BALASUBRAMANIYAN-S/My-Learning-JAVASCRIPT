@@ -14,5 +14,4 @@ let d = 10;
 let e = 20;
 console.log("Before :- ","D Value :", d, "", "E Value :", e);
 [d, e] = [e, d];
-
 console.log("After :- ","D Value :", d, "", "E Value :", e);
